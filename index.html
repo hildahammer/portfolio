@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hilda Hammer — UX/UI Designer</title>
+<link rel="stylesheet" href="style.css">
+<style>
+     :root{
+    --pad: 5vw;
+  }
+
+    main.wrap{
+    max-width: none;
+  }
+
+  .site-header{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .hero{
+    display: flex;
+    align-items: flex-end;
+    min-height: calc(100vh - 60px);
+    gap: 3vw;
+    margin-top: 0;
+
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-right: var(--pad);
+  }
+  .hero-photo{
+    width: 40vw;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    filter: grayscale(100%);
+    align-self: flex-end;
+  }
+  .hero-copy .eyebrow{ margin-bottom: .5rem; }
+  .hero-copy h1{
+    font-family: var(--font-display);
+    font-weight: 450;
+    font-size: clamp(7rem, 18vw, 18rem);
+    line-height: .9;
+    margin: 0 0 0 -0.05em;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-copy{
+    flex: 1;
+    align-self: center;
+  } 
+
+  .section-head{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 3.5rem 0 2.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .section-head h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 5vw, 3.6rem);
+    margin: 0;
+  }
+
+  .case-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.2rem;
+  }
+  .case-card img{
+    width: 100%;
+    aspect-ratio: 4/3.2;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--card-bg);
+    margin-bottom: 1.6rem;
+  }
+  .case-card h3{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin: 0 0 .4rem;
+  }
+  .case-card p{ margin: 0; color: var(--muted); }
+  .case-card{ transition: opacity .15s ease; }
+  .case-card:hover{ opacity: .82; }
+
+  .intro-quote{
+    margin: 7rem auto 2rem;
+    max-width: 950px;
+  }
+    .intro-quote p{
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 2.5;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0 1.8rem;
+  }
+  .intro-quote p::before,
+  .intro-quote p::after{
+    content: "\201C";
+    position: absolute;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .intro-quote p::before{
+    left: 0;
+    top: 0;
+  }
+  .intro-quote p::after{
+    right: 0;
+    bottom: 0.3rem;
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: 760px){
+    .hero{ flex-direction: column; align-items: center; min-height: auto; gap: 2rem; padding-right: 0; }
+    .hero-photo{ width: 100%; aspect-ratio: 4/4.2; align-self: center; }    .case-grid{ grid-template-columns: 1fr; gap: 3rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">HH.</a>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <nav class="nav">
+    <a href="projects.html">projects</a>
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+<img class="hero-photo" src="images/me.png" alt="Portrait of Hilda Hammer">    <div class="hero-copy">
+      <p class="eyebrow">UX/UI Designer | Lund, Sweden</p>
+      <h1 class="dalmatian-text">hilda</h1>  
+    </div>
+  </section>
+
+  <div class="section-head">
+    <h2>case studies</h2>
+    <a class="link-arrow" href="projects.html">
+      see all projects
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+
+  <div class="case-grid">
+    <a class="case-card" href="project-peripheral-encounters.html">
+      <img src="images/mockup.png" alt="Peripheral Encounters project preview">
+      <h3>01. peripheral encounters</h3>
+      <p>designing lock screen widgets for vocabulary learning</p>
+    </a>
+    <a class="case-card" href="project-craftspot.html">
+      <img src="images/craftspot/craftspot-logo.png" alt="CraftSpot project preview">
+      <h3>02. craftspot</h3>
+      <p>connecting local makers with people looking for handcrafted goods</p>
+    </a>
+  </div>
+
+    <div class="intro-quote">
+    <p>
+      Hi, I’m Hilda Hammer, a UX/UI designer based in Lund, Sweden. 
+      I enjoy combining design and technology to create digital experiences that feel simple, intuitive, and enjoyable to use. 
+      With a background in UX design and web development, I’m passionate about interface design, prototyping, and solving problems from a user-centered perspective. 
+      I’m curious, open-minded, and thrive in collaborative environments where ideas can grow into meaningful solutions.
+
+    </p>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">HH.</a>
+      <p>©2026 hilda hammer</p>
+    </div>
+    <div class="footer-col">
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <div class="footer-col">
+      <p>linkedIn: <a class="footer-underline" href="https://www.linkedin.com/in/hildahammer" target="_blank" rel="noopener">Hilda Hammer</a></p>
+      <p>+46 72 234 52 75</p>
+      <p><a class="footer-underline" href="mailto:hildahammer01@gmail.com">hildahammer01@gmail.com</a></p>
+      <p>Lund, Sweden</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CraftSpot — Hilda Hammer</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .case-title{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    margin: 1.5rem 0 1rem;
+    line-height: 1;
+  }
+  .case-subtitle{ font-size: 1.3rem; margin: 0 0 1.4rem; color: var(--muted); }
+  .case-meta{
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .02em;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #ddd8d0;
+    margin-bottom: 3.5rem;
+  }
+  .case-section{ margin-bottom: 4.5rem; }
+  .case-section h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin: 0 0 1.4rem;
+  }
+  .case-section p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0 0 1.1rem;
+  }
+  .phone-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.2rem;
+    margin: 1.8rem 0;
+  }
+  .phone-grid img{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e2ddd3;
+  }
+  
+  .phone-grid figcaption{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #a8672b;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .process-image{
+    width: 100%;
+    border-radius: 8px;
+    margin: 1.8rem 0;
+    border: 1px solid #e2ddd3;
+  }
+  .hmw-box{
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.6rem 1.8rem;
+    margin: 1.8rem 0;
+    max-width: 640px;
+  }
+  .hmw-box p{
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.15rem;
+    font-style: italic;
+    margin: 0 0 0.8rem;
+    line-height: 1.5;
+  }
+  .hmw-box p:last-child{ margin-bottom: 0; }
+    .case-quote{
+    border-left: 2px solid #a8672b;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .case-quote cite{
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+  .team-list{
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin: 0 0 1.1rem;
+  }
+  .case-signature{
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd8d0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #a8672b;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">HH.</a>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="projects.html" class="active">projects</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <a class="back-link" href="projects.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+    back to projects
+  </a>
+
+  <h1 class="case-title">02. craftspot</h1>
+  <p class="case-subtitle">a digital platform connecting local makers with people looking for handcrafted, one-of-a-kind goods</p>
+  <p class="case-meta">GROUP PROJECT&nbsp; | &nbsp;INTERACTION DESIGN&nbsp; | &nbsp;2025</p>
+
+  <section class="case-section">
+    <h2>the challenge</h2>
+    <p>Traditional craft is a significant part of Europe's cultural heritage, but it's disappearing — squeezed out by industrialisation, mass production, and a shrinking group of active practitioners. The knowledge that once passed between generations is gradually being lost, and craftspeople struggle to compete with cheaper, industrial alternatives.</p>
+    <p>Rather than focusing only on professional education paths, we chose to look at a broader, often overlooked group: hobbyists and curious beginners. If more people could easily discover courses, events, and communities around traditional craft, that interest could help keep these traditions alive — while also creating better economic conditions for professional makers.</p>
+    <div class="hmw-box">
+      <p>"How might we connect society members with traditional craftsmanship?"</p>
+      <p>"How might we support the preservation of traditional crafts through a digital platform?"</p>
+    </div>
+  </section>
+
+  <section class="case-section">
+    <h2>my approach</h2>
+    <p>I worked on this project together with Embla Lundqvist, George Dantorp and Osama Sadek, following a double-diamond process across four phases: discover, define, develop and deliver.</p>
+    <p>We started with desktop research into how traditional craft is discussed academically, followed by interviews with eight stakeholders — four self-employed craftspeople and four hobbyists actively doing or wanting to learn a craft. We combined this with observations of a few craftspeople teaching, to understand what a course setting actually looks like in practice.</p>
+    <img class="process-image" src="images/craftspot/affinity-diagram.png" alt="Affinity diagram clustering insights from stakeholder interviews">
+    <p>From there, we built a stakeholder map and an affinity diagram to cluster our interview findings into themes — challenges, sustainability, and learning kept surfacing as the strongest patterns. We used those clusters to build two personas: one representing the craftsperson, one representing the person looking to learn. Every design decision after this point got checked against what these two personas would actually need.</p>
+    <p>In the develop phase, we moved from tree diagrams and mind maps to hands-on sketching — first on paper, then on a whiteboard together in person, and finally into low- and high-fidelity wireframes in Figma.</p>
+    <img class="process-image" src="images/craftspot/sketches.png" alt="Early paper sketches and whiteboard sessions for the CraftSpot interface">
+  </section>
+
+  <section class="case-section">
+    <h2>the solution</h2>
+    <p>CraftSpot combines two things that no existing platform we found managed to do well together: course booking and community. One tab lets people browse and book local craft courses; the other is a feed where people can share what they made, ask questions, and get inspired by others.</p>
+    <figure class="phone-grid">
+      <div><img src="images/craftspot/splash.png" alt="CraftSpot splash screen"><figcaption>welcome screen</figcaption></div>
+      <div><img src="images/craftspot/interface-courses.png" alt="Courses tab showing bookable pottery classes"><figcaption>courses</figcaption></div>
+      <div><img src="images/craftspot/interface-community.png" alt="Community feed with shared course experiences"><figcaption>community</figcaption></div>
+    </figure>
+    <p>We deliberately left out features like direct messaging and open, unstructured posting — a hard call, but one made to keep the platform focused on craft learning rather than risking it turning into a generic social feed. We also built a set of sustainability and origin verification icons for each listing, though usability testing later showed these needed more explanation to feel trustworthy rather than decorative.</p>
+  </section>
+
+  <section class="case-section">
+    <h2>the result</h2>
+    <p>We tested the high-fidelity prototype with four stakeholders using a think-aloud protocol, followed by short critique-style questions about what felt meaningful, confusing, or missing.</p>
+    <p>The clearest finding was about two specific buttons: "create event" and "share a post." Both were central to what makes CraftSpot different from a plain booking app — they're what let craftspeople market themselves for free and let the community grow from the bottom up. But in testing, both buttons were hard to find. That mattered more than a typical usability nitpick, because if people can't find the features that make the platform work as a two-way exchange, the whole concept quietly fails.</p>
+    <img class="process-image" src="images/craftspot/before-after.png" alt="Before and after comparison of the create-event button">
+    <blockquote class="case-quote">
+      Small design choices — button size, placement, contrast — turned out to be directly tied to whether the platform could fulfil its actual purpose, not just whether it looked clean.
+    </blockquote>
+    <p>We used the test feedback to make the button larger, higher-contrast, and more consistently placed across the app — along with smaller consistency fixes elsewhere in the interface.</p>
+    <p>If I continued this project, I'd want to dig deeper into the verification system specifically — testing showed people questioned who gets to decide what counts as "genuine" craft, which is a much bigger design question than icon clarity alone.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">HH.</a>
+      <p>©2026 hilda hammer</p>
+    </div>
+    <div class="footer-col">
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <div class="footer-col">
+      <p>linkedIn: <a class="footer-underline" href="https://www.linkedin.com/in/hildahammer" target="_blank" rel="noopener">Hilda Hammer</a></p>
+      <p>+46 72 234 52 75</p>
+      <p><a class="footer-underline" href="mailto:hildahammer01@gmail.com">hildahammer01@gmail.com</a></p>
+      <p>Lund, Sweden</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Hilda Hammer</title>
+<link rel="stylesheet" href="style.css">
+<style>
+
+  .contact-page{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .page-title{
+    font-family: var(--font-display);
+    font-weight: 550;
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1.02;
+    margin: 3rem 0 4rem;
+    max-width: 800px;
+  }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+  .contact-photo{
+    width: 100%;
+    max-width: 430px;
+    border-radius: 18px;
+    aspect-ratio: 0.85/1;
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+  .contact-info h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin: 0 0 1.6rem;
+  }
+  .contact-info p{
+    font-size: 1.15rem;
+    margin: 0 0 1rem;
+  }
+  .contact-info a:hover{ opacity: .7; }
+
+  @media (max-width: 760px){
+    .contact-grid{ grid-template-columns: 1fr; gap: 2.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">HH.</a>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="projects.html">projects</a>
+      <a href="about.html">about</a>
+      <a href="contact.html" class="active">contact</a>
+  </nav>
+</header>
+
+<main class="wrap contact-page">
+  <h1 class="page-title">always happy<br>to connect.</h1>
+
+  <div class="contact-grid">
+    <img class="contact-photo" src="images/contact.png" alt="Hilda at a floorball event">
+    <div class="contact-info">
+      <h2>contact</h2>
+      <p><a href="mailto:hildahammer01@gmail.com">hildahammer01@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/hildahammer" target="_blank" rel="noopener">hildahammer</a></p>
+      <p><a href="tel:+46722345275">+46 72 234 52 75</a></p>
+      <p>Lund, Sweden</p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+        <a href="index.html" class="logo">HH.</a>
+        <p>©2026 hilda hammer</p>
+    </div>
+    <div class="footer-col">
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <div class="footer-col">
+      <p>linkedIn: <a class="footer-underline" href="https://www.linkedin.com/in/hildahammer" target="_blank" rel="noopener">Hilda Hammer</a></p>
+      <p>+46 72 234 52 75</p>
+      <p><a class="footer-underline" href="mailto:hildahammer01@gmail.com">hildahammer01@gmail.com</a></p>
+      <p>Lund, Sweden</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
