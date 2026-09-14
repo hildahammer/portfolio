@@ -12,10 +12,7 @@
 
   /* ---------- ABOUT PAGE ---------- */
 .about-hero {
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  align-items: center;
-  gap: 2rem;
+  position: relative;
 }
 
 .page-title {
@@ -25,15 +22,20 @@
   line-height: .7;
   letter-spacing: -0.03em;
   margin: 2.5rem 0 3.5rem;
+  position: relative;
 }
 
 .about-image {
-  width: 220px;
-  margin: 0;
+  position: absolute;
+  top: 0.78em;
+  right: 0.6em;
+  width: 0.9em;
 }
 
 .about-image img {
   width: 100%;
+  aspect-ratio: 219 / 195;
+  border-radius: 0.14em;
   object-fit: cover;
   display: block;
 }
@@ -186,6 +188,14 @@
       max-width: 100%;
     }
 
+    .about-hero{
+      /* image scales automatically with title font-size via em units */
+    }
+
+    .about-image{
+      width: 1.6em;
+    }
+
     .about-intro{
       margin-bottom: 5rem;
     }
@@ -242,11 +252,10 @@
   <div class="about-hero">
   <h1 class="page-title">
     about<br>me.
+    <span class="about-image">
+      <img src="images/innebandy.png" alt="Hilda playing floorball">
+    </span>
   </h1>
-
-  <div class="about-image">
-    <img src="images/innebandy.png" alt="Hilda">
-  </div>
 </div>
 
 
