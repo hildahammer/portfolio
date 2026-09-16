@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peripheral Encounters — Hilda Hammer</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .case-title{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    margin: 1.5rem 0 1rem;
+    line-height: 1;
+  }
+  .case-subtitle{ font-size: 1.3rem; margin: 0 0 1.4rem; color: var(--muted); }
+  .case-meta{
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .02em;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #ddd8d0;
+    margin-bottom: 3.5rem;
+  }
+  .case-section{ margin-bottom: 4.5rem; }
+  .case-section h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin: 0 0 1.4rem;
+  }
+  .case-section p{
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 640px;
+    margin: 0 0 1.1rem;
+  }
+  .case-image{
+    width: 100%;
+    border-radius: 6px;
+    background: var(--card-bg);
+    aspect-ratio: 16/9;
+    margin-top: 1.5rem;
+  }
+    .placeholder-note{
+    font-size: .95rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+  .phone-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 1.8rem 0;
+  }
+  .phone-grid img{
+    width: 100%;
+    border-radius: 8px;
+  }
+  .phone-grid figcaption{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2f6fed;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  .phone-grid.featured{
+    grid-template-columns: minmax(200px, 280px);
+    justify-content: center;
+  }
+  .case-quote{
+    border-left: 2px solid #2f6fed;
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  .case-quote cite{
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.6rem;
+  }
+
+  .case-signature{
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd8d0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #2f6fed;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">HH.</a>
+  <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="nav">
+      <a href="projects.html" class="active">projects</a>
+      <a href="about.html">about</a>
+      <a href="contact.html">contact</a>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <a class="back-link" href="projects.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg>
+    back to projects
+  </a>
+
+  <h1 class="case-title">01. peripheral encounters</h1>
+  <p class="case-subtitle">designing lock screen widgets for vocabulary learning</p>
+    <p class="case-meta">BACHELOR'S THESIS PROJECT&nbsp; | &nbsp;RESEARCH THROUGH DESIGN&nbsp; | &nbsp;2026</p>
+
+    <section class="case-section">
+    <h2>the challenge</h2>
+    <p>Vocabulary learning often requires dedicated time and concentration – something that's hard to fit into everyday life.</p>
+    <p>This project explores how the iOS lock screen, a space for quick and repeated glances, can be designed to support meaningful vocabulary learning in a natural and non-intrusive way.</p>
+    <img src="images/peripheral-encounters/lockscreen-context.png" alt="An iOS lock screen with arrows pointing to the widget area" style="max-width: 320px; border-radius: 8px; margin-top: 1rem;">
+  </section>
+
+  <section class="case-section">
+    <h2>my approach</h2>
+    <p>I worked on this thesis together with Olivia Galazka, taking a research-through-design approach — meaning the prototype itself became a tool for generating knowledge, not just a deliverable at the end.</p>
+    <p>We built a Figma prototype simulating a real iOS lock screen and tested two layers: five content formats, ranging from a minimal word + translation up to a full dictionary-style definition.</p>
+    <figure class="phone-grid">
+      <div><img src="images/peripheral-encounters/variant1.png" alt="Variant 1"><figcaption>word + translation</figcaption></div>
+      <div><img src="images/peripheral-encounters/variant2.png" alt="Variant 2"><figcaption>side by side</figcaption></div>
+      <div><img src="images/peripheral-encounters/variant3.png" alt="Variant 3"><figcaption>+ pronunciation</figcaption></div>
+      <div><img src="images/peripheral-encounters/variant4.png" alt="Variant 4"><figcaption>+ example sentence</figcaption></div>
+      <div><img src="images/peripheral-encounters/variant5.png" alt="Variant 5"><figcaption>dictionary-style</figcaption></div>
+    </figure>
+    <p>We ran 12 semi-structured interviews combined with hands-on testing, plus 3 pilot interviews to refine the setup beforehand.</p>
+    <blockquote class="case-quote">
+      "I don't really check it, I just want into the phone. It's just a second, checking the time."
+      — study participant, on how little attention a lock screen actually gets
+    </blockquote>
+  </section>
+
+  <section class="case-section">
+    <h2>the solution</h2>
+    <p>Word + pronunciation + translation (variant 3) was preferred by half of all participants — not the simplest option, but the one where every piece of information earned its place.</p>
+    <p>On the visual side, we tested three treatments on top of that winning format: a box, a divider line, and an image.</p>
+    <figure class="phone-grid">
+      <div><img src="images/peripheral-encounters/design1.png" alt="Box variant"><figcaption>box</figcaption></div>
+      <div><img src="images/peripheral-encounters/design2.png" alt="Divider variant"><figcaption>divider</figcaption></div>
+      <div><img src="images/peripheral-encounters/design3.png" alt="Image variant"><figcaption>image</figcaption></div>
+    </figure>
+    <p>The divider won by a clear margin — it added no new information at all, but gave the eye a clear place to start.</p>
+        <blockquote class="case-quote">
+      "The eye doesn't know where to look when the word is unfamiliar. But then the divider is really good."
+      — study participant
+    </blockquote>
+  </section>
+
+  <p class="case-signature">Concept campaign · Bachelor thesis project 2026</p>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">HH.</div>
+      <p>©2026 hilda hammer</p>
+    </div>
+    <div class="footer-col">
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <div class="footer-col">
+      <p>linkedIn: <a class="footer-underline" href="https://www.linkedin.com/in/hildahammer" target="_blank" rel="noopener">Hilda Hammer</a></p>
+      <p>+46 72 234 52 75</p>
+      <p><a class="footer-underline" href="mailto:hildahammer01@gmail.com">hildahammer01@gmail.com</a></p>
+      <p>Lund, Sweden</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
