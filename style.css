@@ -1,1 +1,298 @@
+/* ---------- Hilda Hammer — portfolio ---------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --bg: #f6f6f4;
+  --ink: #111111;
+  --muted: #4a4a4a;
+  --footer-bg: #0c0c0c;
+  --footer-text: #f6f6f4;
+  --footer-muted: #9a9a9a;
+  --card-bg: #eceae6;
+
+  --max: 1000px;
+  --pad: 5vw;
+
+  --font-display: 'Urbanist', sans-serif;
+  --font-body: 'Urbanist', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
+
+/* ---------- Header ---------- */
+
+.site-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem var(--pad) 0;
+}
+
+.logo{
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: -0.02em;
+}
+
+.nav{
+  display: flex;
+  gap: 2.6rem;
+  font-size: 1.05rem;
+}
+
+.nav a{
+  position: relative;
+  font-weight: 500;
+  transition: opacity .15s ease, font-weight .15s ease;
+}
+
+.nav a:hover{
+  opacity: .55;
+}
+
+.nav a.active{
+  font-weight: 700;
+}
+
+.nav-toggle{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-toggle span{
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--ink);
+  margin: 6px 0;
+}
+
+
+/* ---------- Buttons / links with chevron ---------- */
+
+.link-arrow{
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.link-arrow svg{
+  width: 16px;
+  height: 16px;
+  transition: transform .15s ease;
+}
+
+.link-arrow:hover svg{
+  transform: translateX(4px);
+}
+
+.back-link{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 600;
+  margin: 3rem 0 1.5rem;
+}
+
+.back-link svg{
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- CV download button ---------- */
+
+.btn-cv{
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: .8rem 1.5rem;
+  margin-top: .5rem;
+  transition: background .15s ease, color .15s ease;
+}
+
+.btn-cv svg{
+  width: 16px;
+  height: 16px;
+}
+
+.btn-cv:hover{
+  background: var(--ink);
+  color: var(--bg);
+}
+
+
+/* ---------- Footer ---------- */
+
+.site-footer{
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  margin-top: 8rem;
+  padding: 3.5rem var(--pad) 2.5rem;
+}
+
+.footer-grid{
+  width: 100%;
+  max-width: none;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+.footer-brand .logo{
+  color: var(--footer-text);
+  margin-bottom: .8rem;
+}
+
+.footer-brand p{
+  color: var(--footer-muted);
+  margin: 0;
+  font-size: .95rem;
+}
+
+.footer-col{
+  white-space: nowrap;
+}
+
+.footer-col a,
+.footer-col p{
+  display: block;
+  margin-bottom: .6rem;
+  font-size: .95rem;
+}
+
+.footer-col a{
+  color: var(--footer-text);
+}
+
+.footer-col a:hover{
+  opacity: .7;
+}
+
+.footer-col p{
+  color: var(--footer-muted);
+  margin: 0 0 .6rem;
+}
+
+.footer-col .footer-underline{
+  text-decoration: underline;
+}
+
+
+/* ---------- Utility ---------- */
+
+.eyebrow{
+  font-size: 1.05rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+
+/* ---------- About page ---------- */
+
+.about-page{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* ---------- Contact page ---------- */
+
+.contact-page{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 760px){
+
+  .nav{
+    position: fixed;
+    inset: 0 0 auto 0;
+    top: 0;
+    background: var(--bg);
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    padding: 6rem var(--pad) 3rem;
+
+    transform: translateY(-110%);
+    transition: transform .25s ease;
+
+    z-index: 20;
+    font-size: 1.4rem;
+  }
+
+  .nav.open{
+    transform: translateY(0);
+  }
+
+  .nav-toggle{
+    display: block;
+    z-index: 30;
+  }
+
+  .site-header{
+    position: relative;
+  }
+
+  .footer-grid{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-col{
+    white-space: normal;
+  }
+}
